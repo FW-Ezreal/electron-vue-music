@@ -27,6 +27,10 @@ let webConfig = {
         use: ['vue-style-loader', 'css-loader']
       },
       {
+        test: /\.less$/,
+        use: ['vue-style-loader', 'css-loader', 'less-loader']
+      },
+      {
         test: /\.html$/,
         use: 'vue-html-loader'
       },
